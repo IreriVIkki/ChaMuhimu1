@@ -16,12 +16,21 @@
     </header>
     <section>
         <div class="container">
+            <div class="modal fade">
+
+            </div>
             <div class="form-group">
+                <div id="typingSpeed">
+                    <label for="speed" id="userSpeed"></label>
+                </div>
                 <div>
-                    <textarea class="form-control" name="homeText" id="homeSysText" cols="30" rows="10"></textarea>
+                    <textarea class="form-control" name="homeText" id="homeSysText" cols="30" rows="10">The quick brown fox jumps over the lazy dog. This is undoubtedly the best known pangram. It contains all 26 letters of the alphabet (as it must do in order to be a pangram) and is 35 letters long. That means that is not particularly economical with 9 surplus letters.
+                    </textarea>
                 </div>
                 <div>
                     <textarea class="form-control" name="homeText" id="homeUserText" cols="30" rows="10"></textarea>
+                    <button class="btn btn-info" id="startTimer">Start</button>
+                    <label class="form-control px-4" for="timer" id="timer">timer</label>
                 </div>
             </div>
         </div>
@@ -69,7 +78,7 @@
 
 
 <!-- ********************************************************* -->
-<div style="margin-top: 700px;"></div>
+<div style="margin-top: 200px;"></div>
 <script src="js/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
