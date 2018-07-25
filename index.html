@@ -4,56 +4,146 @@
     <title>cha muhimu</title>
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,700,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-
-    <header>
+    <!-- <header>
         <div class="navbar">
-
+            <ul>
+                <li class="float-right" id="login">
+                    <a id="login-trigger" href="#">
+                        <span>login</span>
+                        <span>&#x25BC;</span>
+                    </a>
+                    <div id="login-content">
+                        <form>
+                            <fieldset id="inputs">
+                                <input id="username" type="email" name="Email" placeholder="Your email address" required>
+                                <input id="password" type="password" name="Password" placeholder="Password" required>
+                            </fieldset>
+                            <fieldset id="actions">
+                                <input type="submit" id="submit" value="Log in">
+                                <label>
+                                    <input type="checkbox" checked="checked">Keep me signed in</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li class="float-right">
+                    <a class="log" href="#logout">Logout</a>
+                </li>
+                <li class="float-right">
+                    <a class="active" href="#contact">FAQ</a>
+                </li>
+                <li class="float-right">
+                    <a class="active" href="#contact">Games</a>
+                </li>
+                <li class="float-right">
+                    <a class="active float-right" href="#news">Home</a>
+                </li>
+                <li>
+                    <a class="active" href="#home">Title</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </header>  -->
     <section>
+        <div id="carouselExampleIndicators" class="carousel slide mb-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="chaMuhimuLogo">
+                    <img class="w-50" src="img/logo.jpg" alt="">
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/writers.jpg" alt="Developers">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/macimg1.jpg" alt="Kids">
+                    </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/hponbed.jpg" alt="Writers">
+                </div><div class="carousel-item">
+                    <img class="d-block w-100" src="img/vintage.jpg" alt="Writers">
+                </div><div class="carousel-item">
+                    <img class="d-block w-100" src="img/keyboard.jpg" alt="Writers">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </div>
+    </section>  
+    <section id="gameArea">
         <div class="container">
             <div class="modal fade">
 
             </div>
-            <div class="form-group">
-                <div id="typingSpeed">
-                    <label for="speed" id="userSpeed"></label>
+            <div class="jumbotron">
+                <div class="text-center">
+                    <p>Start Typing!!!!</p>
                 </div>
-                <div>
-                    <textarea class="form-control" name="homeText" id="homeSysText" cols="30" rows="10">The quick brown fox jumps over the lazy dog. This is undoubtedly the best known pangram. It contains all 26 letters of the alphabet (as it must do in order to be a pangram) and is 35 letters long. That means that is not particularly economical with 9 surplus letters.
-                    </textarea>
-                </div>
-                <div>
-                    <textarea class="form-control" name="homeText" id="homeUserText" cols="30" rows="10"></textarea>
-                    <button class="btn btn-info" id="startTimer">Start</button>
-                    <label class="form-control px-4" for="timer" id="timer">timer</label>
-                </div>
+                <div class="container p-2 d-flex flex-row">
+                    <button class="h1 py-3 px-4 btn btn-info mx-1 btn-lg" disabled="true" for="time" id="timeDisplay">0</button>
+                    <input class="form-control h1 text-right w-50 text-font-md userInput">
+                    <button class="form-control sysText h1 btn-light mx-1 pl-0 text-font-md" disabled="true"><span class="text-success" id="currentWord">The </span> <span id="otherWords">quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the
+                    lazy dog.The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.</span> </button>
+                    <button class="btn btn-light h1 text-info" disabled="true">WPM: 23</button>
+                </div> 
             </div>
         </div>
     </section>
     <section>
-        <div class="">
-            <button class="btn btn-success" id="kidsButton">Kids</button>
-            <button class="btn btn-success" id="codersButton">Coders</button>
-            <button class="btn btn-success" id="writersButton">Writers</button>
-            <button class="btn btn-success" id="customButton">Custom</button>
+        <div class="container my-3 d-flex w-50 justify-content-around">
+            <a href="kids.html" class="btn btn-info" role="button">Kids</a>
+            <a href="coders.html" class="btn btn-info" role="button">Coders</a>
+            <a href="writers.html" class="btn btn-info" role="button">Writers</a>
+            <a href="custom.html" class="btn btn-info" role="button">Custom</a>
         </div>
     </section>
     <section>
         <div class="container">
-            <div class="card-deck">
-                <div class="card">
-
+            <div class="wraper p-4">
+                <div class="wraper-item  card-body mx-auto img-thumbnail">
+                    <h3 class="card-title pt-2 px-2">Typing Practice</h3>
+                    <p class="card-text card-body">
+                        If you want to steadily improve your typing speed or train some specific typing skills you should check
+                        out the typing practice page. Improve your typing speed with practicing the Top 1000 words of each language (while unlocking
+                        those sweet, sweet stars), or challenge your typing skills with a user-submitted text. The practice mode is currently under
+                        development, more features & modes will be added in the near future.
+                    </p>
+                    
                 </div>
-                <div class="card">
-                
+                <div class="wraper-item card-body mx-auto img-thumbnail">
+                    <h3 class="card-title pt-2 px-2">Why learn to touch type?</h3>
+                    <p class="card-text card-body">
+                        When you can do it well, touch typing is the fastest way to write. Many people quickly learn to touch type faster than they
+                        can write with a pen. The important things to remember are: ■  Use the correct fingers ■  There's no need to rush! ■  Alwaysrest
+                        your wrists on the desk. You should take a rest, and shake your hands and arms to relax your muscles if you get tired.
+                        
+                    </p>
                 </div>
-                <div class="card">
-                
+                <div class="wraper-item card-body mx-auto img-thumbnail">
+                    <h3 class="card-title pt-2 px-2">Why learn to touch type?</h3>
+                    <p class="card-text card-body">
+                         It's important not to look at your hands when you are learning to type. The best way to ensure that you don't look at your
+                        hands is to cover them up - you can make a simple box out of cardboard or wood to cover both the keys and your hands. You
+                        will need headphones or speakers to enjoy the song and dance in each game. The games use the Flash plug-in and your computer
+                        will Why learn to touch type?need to have this installed to be able to play the games. Health and Safety Sit comfortably
+                        w
+                    </p>
                 </div>
             </div>
         </div>
@@ -84,6 +174,7 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
     crossorigin="anonymous"></script>
+<script src="text.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 

@@ -1,0 +1,135 @@
+body {
+    background-image: url('../img/bedroom.jpg');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+
+.chaMuhimuLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-inner > div {
+    height: 45vh;
+}
+
+.wrongWord {
+    text-decoration-style: dashed;
+    color: red;
+}
+
+.correctWord {
+    color: rgb(0, 154, 214);
+}
+
+#sysText {
+    word-wrap: bre
+}
+
+.userInput {
+     border: none;
+}
+
+.userInput:active {
+    border: none;
+    color: white
+}
+
+#gameArea {
+
+}
+
+.wraper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 0.5em;
+    box-sizing: border-box;
+}
+
+.wraper>* {
+    background-color: lavender;
+    box-sizing: border-box;
+}
+
+.sysText {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-font-md {
+    font-size: 23px;
+}
+
+.animation-loop {
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-image: url('../img/bedroom.jpg');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+
+.chaMuhimuLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-inner>div {
+    height: 45vh;
+}
+
+.wrongWord {
+    text-decoration-style: dashed;
+    color: red;
+}
+
+.correctWord {
+    color: rgb(0, 154, 214);
+}
+
+#sysText {
+    word-wrap: bre
+}
+
+.userInput {
+    border: none;
+}
+
+.userInput:active {
+    border: none;
+    color: white
+}
+
+#gameArea {}
+
+.wraper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 0.5em;
+    box-sizing: border-box;
+}
+
+.wraper>* {
+    background-color: lavender;
+    box-sizing: border-box;
+}
+
+.sysText {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-font-md {
+    font-size: 23px;
+}
+
+.animation-loop {
+    animation-iteration-count: infinite;
+}
