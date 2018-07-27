@@ -16,46 +16,53 @@
 </head>
 
 
-<body class="custom p-0 m-0">
-    <h1>Welcome!!</h1>
-    <section>
-        <div class="animals">
-
-            <div class="animated infinite slideInDown ">
-
-            </div>
-            <section id="gameArea">
-                <div class="container my-3 ">
-                    <div class="modal fade">
-
-                    </div>
-                    <div class="jumbotron">
-                        <button class="btn btn-info form-control my-3 font-26 h-25" disabled="true">Enter Your Custom Text</button>
-                        <textarea name="enterCustomText" id="customText" cols="30" rows="5" class="form-control font-26"></textarea>
-                        <button class="btn btn-lg btn-info saveBtn my-3">Save and Create</button>
-                        <div class="text-center mt-4">
-                            <h2>Karibu!!</h2>
-                        </div>
-                        <div class="container p-2 d-flex flex-row">
-                            <button class="h1 py-3 px-4 btn btn-info mx-1 btn-lg" disabled="true" for="time" id="timeDisplay">0</button>
-                            <input class="form-control h1 text-right w-75 text-font-md userInput">
-                            <button class="form-control sysText h1 btn-light mx-1 pl-0 text-font-md font-26" disabled="true">
-                                <span class="text-success" id="currentWord"></span>
-                                <span id="otherWords"></span>
-                            </button>
-                            <button class="btn btn-light h1 text-info" disabled="true" id="wpm">WPM: 23</button>
-                        </div>
-                        <div>
-                            <button class="btn btn-warning" id="playAgain">Play Again</button>
-                        </div>
-                    </div>
-                    <button onclick="goBack()" class="btn btn-info">Back</button>
+<body class="custom">
+    <section id="gameArea">
+        <div class="container p-0">
+            <div class="jumbotron m-0 py-5">
+                <button class="btn btn-info form-control mb-2 font-26 h-25" disabled="true">Enter Your Custom Text</button>
+                <textarea name="enterCustomText" id="customText" cols="30" rows="5" class="form-control font-26"></textarea>
+                <div >
+                    <button class="btn btn-lg btn-info saveBtn my-3">Save and Create</button>
+                    <br><br><br><br><br>
                 </div>
-            </section>
-            <div class="animated infnite slideInDown">
-
+                <br>
+                <div class="hidden" id="showResults">
+                    <div class="showResults bg-warning animated p-4 mb-3 d-flex align-items-center flex-column" style="display: none;">
+                        <p>
+                            <h1>You type at the speed of:
+                                <div class="text-center pt-2"> 
+                                    <span>CPM</span> <span id="resultsCPM"></span>
+                                </div>
+                                <div class="text-center pt-2">
+                                    <span>
+                                        WPM</span>
+                                    <span id="resultsFinal"></span>
+                                </div>
+                            </h1>
+                        </p>
+                        <p><h1 class="comments text-danger">Cha muhimu ni Uhai</h1></p>
+                        <div>
+                            <button class="btn btn-lg btn-success playAgain">Jaribu Tena</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-2 d-flex flex-row">
+                    <button class="h1 py-3 px-4 btn btn-info mx-1 btn-lg" disabled="true" for="time" id="timeDisplay">0</button>
+                    <input class="form-control h1 text-right w-75 text-font-md userInput">
+                    <button class="form-control sysText h1 btn-light mx-1 pl-0 text-font-md font-26" disabled="true">
+                        <span class="text-success" id="currentWord"></span>
+                        <span id="otherWords"></span>
+                    </button>
+                    <button class="btn btn-light h1 text-info wpm" disabled="true" id="wpm">WPM: 23</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning playAgain">Play Again</button>
+                    <button onclick="goBack()" class="btn btn-info mx-3">Back</button>
+                </div>
+                <br>
+                <br><br>
             </div>
-
         </div>
     </section>
     <script src="js/jquery.js"></script>
@@ -64,9 +71,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/text.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
     <script src="js/custom.js"></script>
+    <script src="js/text.js"></script>
 </body>
 
 </html>

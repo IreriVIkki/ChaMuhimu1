@@ -28,6 +28,26 @@
                         <div class="text-center">
                             <h2>Start Typing 😀😀!!!!</h2>
                         </div>
+                        <div class="hidden" id="showResults">
+                            <div class="showResults bg-warning animated p-4 mb-3 d-flex align-items-center flex-column" style="display: none;">
+                                <p>
+                                    <h1>You type at the speed of:
+                                        <div class="text-center pt-2"> 
+                                            <span>CPM</span> <span id="resultsCPM"></span>
+                                        </div>
+                                        <div class="text-center pt-2">
+                                            <span>
+                                                WPM</span>
+                                            <span id="resultsFinal"></span>
+                                        </div>
+                                    </h1>
+                                </p>
+                                <p><h1 class="comments text-danger">Cha muhimu ni Uhai</h1></p>
+                                <div>
+                                    <button class="btn btn-lg btn-success playAgain">Jaribu Tena</button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="container p-2 d-flex flex-row">
                             <button class="h1 py-3 px-4 btn btn-info mx-1 btn-lg" disabled="true" for="time" id="timeDisplay">0</button>
                             <input class="form-control h1 text-right w-50 text-font-md userInput">
@@ -51,6 +71,7 @@
         crossorigin="anonymous"></script>
     <script src="js/final.js"></script>
     <script src="js/kellen.js"></script>
+    <script src="js/text.js"></script>
 </body>
 
 </html>

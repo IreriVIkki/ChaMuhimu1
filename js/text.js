@@ -1,8 +1,8 @@
 var originalSysText = "Is allowance instantly strangers applauded discourse so. Separate entrance welcomed sensible laughing why one moderate shy. We seeing piqued garden he. As in merry at forth least ye stood. And cold sons yet with. Delivered middleton therefore me at. Attachment companions man way excellence how her pianoforte."
 
 function initialText(text) {
-    $('#currentWord').text(text.split(' ')[0] + ' ')
-    $('#otherWords').text(text.split(' ').splice(1).join(' '))
+    $('#currentWord').text((text.split(' '))[0] + ' ');
+    $('#otherWords').text(text.split(' ').splice(1).join(' '));
 }
 
 function checkAccuracy(userInput, sysCompare){
@@ -25,7 +25,6 @@ function playAgain(){
     $('#timeDisplay').text('60');
     $('.userInput').text('');
     $('.wpm').text('00');
-    initialText();
     // }, 500);
 
 }
@@ -42,8 +41,8 @@ function wordFinished(userInput, sysText, originalSysText) {
     }
     if (sysSpace === space && space === userSpace) {
         var sysWords = sysText.split(' ');
-        var firstWord = sysWords[0]
-        var otherWords = (sysWords.splice(1)).join(' ')
+        var firstWord = sysWords[0];
+        var otherWords = (sysWords.splice(1)).join(' ');
         $('#currentWord').text(firstWord)
         $('#otherWords').text(otherWords)
     }
@@ -97,7 +96,7 @@ window.onload = function () {
 
     $('.userInput').on('focus', function () {
         // if ($('.userInput').val() != '') {
-            var time = 10;
+            var time = 60;
                 display = document.querySelector('#timeDisplay');
             startTimer(time, display);
         // }
@@ -117,9 +116,12 @@ $(document).ready(function () {
     $('.playAgain').click(function (e) { 
         e.preventDefault();
         playAgain()
-        $('#showResults').addClass('zoomOut');
-        // var wait = setTimeout(function(){
-        $('#showResults').addClass('hidden');
+        $('.showResults').addClass('zoomOut');
+        var wait = setTimeout(function(){
+            $('#showResults').addClass('hidden');
+        }, 500);
+        
+        initialText();
     });
     
     $('.userInput').on('keyup', function (e) {

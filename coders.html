@@ -10,6 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/karuru.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Coders</title>
 </head>
 
@@ -27,11 +28,36 @@
                         <button class="btn btn-success" id="slide">
                             <strong>Cha Muhimu says:</strong>
                         </button>
+
+                        <div class="hidden" id="showResults">
+                            <div class="showResults bg-warning animated p-4 mb-3 d-flex align-items-center flex-column" style="display: none;">
+                                <p>
+                                    <h1>You type at the speed of:
+                                        <div class="text-center pt-2"> 
+                                            <span>CPM</span> <span id="resultsCPM"></span>
+                                        </div>
+                                        <div class="text-center pt-2">
+                                            <span>
+                                                WPM</span>
+                                            <span id="resultsFinal"></span>
+                                        </div>
+                                    </h1>
+                                </p>
+                                <p><h1 class="comments text-danger">Cha muhimu ni Uhai</h1></p>
+                                <div>
+                                    <button class="btn btn-lg btn-success playAgain">Jaribu Tena</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron gameArea">
+                        <div class="text-center">
+                            <button disabled="true" class="btn btn-danger btn-lg mb-4 py-2">Start Typing Now!!</button>
+                        </div>
                         <div id="panel">
                             <h2>
                                 <strong>KEEP CALM 😎
-                                    <br> AND
-                                    <br> LEGGO🤟</strong>
+                                <br> AND
+                                <br> LEGGO🤟</strong>
                             </h2>
                         </div>
                         <div class="container p-2 d-flex flex-row d-flex justify-content-start">
@@ -55,8 +81,8 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
             crossorigin="anonymous"></script>
+        <!-- <script src="js/karuru.js"></script> -->
         <script src="js/text.js"></script>
-        <script src="js/karuru.js"></script>
     </div>
 </body>
 

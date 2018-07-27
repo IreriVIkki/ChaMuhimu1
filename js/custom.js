@@ -109,12 +109,12 @@ function goBack() {
 }
 
 $(document).ready(function () {
-    $('#playAgain').click(function (e) { 
+    $('#playAgain').click(function (e) {
         e.preventDefault();
         playAgain()
     });
 
-    $('.saveBtn').click(function (e) { 
+    $('.saveBtn').click(function (e) {
         e.preventDefault();
         var originalSysText = $('#customText').val();
         initialText(originalSysText);
