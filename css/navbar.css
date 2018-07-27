@@ -1,0 +1,474 @@
+/* This section is for the css navbar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+
+li a:hover:not(#login) {
+    background-color: red
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: right;
+    background: #eee;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px;
+}
+
+nav li {
+    float: left;
+}
+
+nav #login {
+    border-right: 1px solid #ddd;
+    box-shadow: 1px 0 0 #fff;
+}
+
+nav #login-trigger,
+    {
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+nav #signup a {
+    border-radius: 0 3px 3px 0;
+}
+
+nav #login-trigger {
+    border-radius: 3px 0 0 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+    background: #fff;
+}
+
+nav #login-content {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    background-image: linear-gradient(top, #fff, #eee);
+    padding: 15px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+    border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+    right: 0;
+    width: 250px;
+}
+
+#inputs input {
+    background: #f1f1f1;
+    padding: 6px 5px;
+    margin: 0 0 5px 0;
+    width: 238px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+#login #actions {
+    margin: 10px 0 0 0;
+}
+
+#login #submit {
+    background-color: #d14545;
+    background-image: linear-gradient(top, #e97171, #d14545);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    border: 1px solid #7e1515;
+    float: left;
+    height: 30px;
+    padding: 0;
+    width: 100px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #fff;
+}
+
+#login #submit:hover,
+#login #submit:focus {
+    background-color: #e97171;
+    background-image: linear-gradient(top, #d14545, #e97171);
+}
+
+#login #submit:active {
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+#login #submit::-moz-focus-inner {
+    border: none;
+}
+
+#login label {
+    float: right;
+    line-height: 30px;
+}
+
+#login label input {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.float-right {
+    float: right;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: 1px solid white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#login-content {
+    display: none;
+    position: absolute;
+    background: #444;
+    background-image: webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #444, #000);
+    background-image: -moz-linear-gradient(top, #444, #000);
+    background-image: -ms-linear-gradient(top, #444, #000);
+    background-image: -o-linear-gradient(top, #444, #000);
+    background-image: linear-gradient(top, #444, #000);
+    padding: 15px;
+    -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+    -moz-border-radius: 3px 0 3px 3px;
+    -webkit-border-radius: 3px 0 3px 3px;
+    border-radius: 3px 0 3px 3px;
+    right: 0;
+    width: 250px;
+}
+
+#inputs impute {
+    background: #efefef;
+    padding: 6px 5px;
+    margin: 0 0 5px 0;
+    width: 238px;
+    border: 1px solid #222222;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 1px #efefef inset;
+    -webkit-box-shadow: 0 1px 1px #efefef inset;
+    box-shadow: 0 1px 1px #efefef inset;
+}
+
+#login {
+    border-right: 1px solid #444;
+    -moz-box-shadow: 1px 0 0 #222;
+    -webkit-box-shadow: 1px 0 0 #444;
+    box-shadow: 1px 0 0 #444;
+    float: right;
+}
+
+label {
+    position: relative;
+    top: 2px;
+    right: 2px;
+    color: white
+}
+
+#login {
+    border-right: 1px solid #444;
+    -moz-box-shadow: 1px 0 0 #222;
+    -webkit-box-shadow: 1px 0 0 #444;
+    box-shadow: 1px 0 0 #444;
+}
+
+.log {
+    color: yellow
+}
+
+.log:hover {
+    color: white
+}
+
+#login-trigger {
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    color: yellow
+}
+
+#login-trigger:hover,
+#login .active,
+#signup a:hover {
+    background: #222;
+    color: #efefef;
+}
+
+#login #submit {
+    background-color: #bf4c24;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d46a15), to(#bf4c24));
+    background-image: -webkit-linear-gradient(top, #d46a15, #bf4c24);
+    background-image: -moz-linear-gradient(top, #d46a15, #bf4c24);
+    background-image: -ms-linear-gradient(top, #d46a15, #bf4c24);
+    background-image: -o-linear-gradient(top, #d46a15, #bf4c24);
+    background-image: linear-gradient(top, #d46a15, #bf4c24);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    border: 1px solid #222222;
+    float: left;
+    height: 30px;
+    padding: 0;
+    width: 100px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #efefef;
+}
+
+#login #submit:hover,
+#login #submit:focus {
+    background-color: #d79800;
+    background-image: webkit-gradient(linear, left top, left bottom, from(#bf4c24), to(#d46a15));
+    background-image: -webkit-linear-gradient(top, #bf4c24, #d46a15);
+}
+
+#login #submit:active {
+    outline: none;
+}
+
+/* This css is the writers*/
+
+.writers {
+    background-color: darkolivegreen;
+    text-align: center;
+    height: 802px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h {
+    color: white;
+}
+
+h2 {
+    position: relative;
+    color: gainsboro;
+    top: 90px;
+}
+
+#gameArea {
+    position: relative;
+    top: 90px;
+}
+
+.text-center {
+    font-size: 40px;
+    ;
+    color: red
+}
+
+/*Css for the signup button*/
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+
+header button {
+    background-color: #222222;
+    color: yellow;
+    padding: 14px 14px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    float: right;
+}
+
+header button:hover {
+    background-color: red;
+    color: white
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}

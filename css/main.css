@@ -1,54 +1,38 @@
 body {
-    background-image: url('../img/bedroom.jpg');
+    /* background-image: url('../img/maccode.jpg');
     background-size: 100% auto;
     background-attachment: fixed;
-    background-repeat: no-repeat
+    background-repeat: no-repeat; */
+    background-color: #b5a873
+}
+
+.hidden {
+    display: none;
 }
 
 .chaMuhimuImg {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 20%;
-    width: 70% !important;
+    width: 60% !important;
     transform: translate(-50%, -50%);
 }
 
-.chaMuhimuImg img {
-    opacity: 0.8;
+.chaMuhimuimg {
+    opacity: 0.6;
 }
+
 
 .navbar {
     position: absolute
 }
 
 .carousel-inner > div {
-    height: 45vh;
+    height: 60vh;
 }
 
-.wrongWord {
-    text-decoration-style: dashed;
-    color: red;
-}
-
-.correctWord {
-    color: rgb(0, 154, 214);
-}
-
-#sysText {
-    word-wrap: bre
-}
-
-.userInput {
-     border: none;
-}
-
-.userInput:active {
-    border: none;
-    color: white
-}
-
-#gameArea {
-
+.gameArea {
+    background-color: rgba(0, 0, 255, 0.1);
 }
 
 .wraper {
@@ -76,69 +60,21 @@ body {
     animation-iteration-count: infinite;
 }
 
-body {
-    background-image: url('../img/bedroom.jpg');
+#subscribe {
+    background-image: url('../img/blackkey.jpg');
     background-size: 100% auto;
     background-attachment: fixed;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
-.chaMuhimuLogo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.sub-container {
+    background: rgba(0, 0, 0, .5);
 }
 
-.carousel-inner>div {
-    height: 45vh;
+.w-10 {
+    width: 10%;
 }
 
-.wrongWord {
-    text-decoration-style: dashed;
-    color: red;
-}
-
-.correctWord {
-    color: rgb(0, 154, 214);
-}
-
-#sysText {
-    word-wrap: bre
-}
-
-.userInput {
-    border: none;
-}
-
-.userInput:active {
-    border: none;
-    color: white
-}
-
-#gameArea {}
-
-.wraper {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 0.5em;
-    box-sizing: border-box;
-}
-
-.wraper>* {
-    background-color: lavender;
-    box-sizing: border-box;
-}
-
-.sysText {
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.text-font-md {
-    font-size: 23px;
-}
-
-.animation-loop {
-    animation-iteration-count: infinite;
+.w-33 {
+    width: 33%;
 }

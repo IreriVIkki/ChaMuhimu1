@@ -1,0 +1,32 @@
+.kids {
+    background-color: whitesmoke;
+    background-image: url('../assets/watoto2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #FF6699;
+}
+
+.jumbotron {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-bottom: 100px;
+    border: 3px solid #FF6699;
+    border-radius: 15px;
+    width: 500px;
+    background-color: #89cff0;
+}
+
+.btn {
+    padding: 10px 25px;
+    float: center;
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,700,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/karuru.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Coders</title>
+</head>
+
+<body>
+    <div id="background">
+        <div class="top">
+            <h1>Let's code 👻!!</h1>
+        </div>
+        <section id="gameArea">
+            <div class="container">
+                <div class="modal fade">
+                </div>
+                <div class="jumbotron" id="codex">
+                    <div class="text-center">
+                        <button class="btn btn-success" id="slide">
+                            <strong>Cha Muhimu says:</strong>
+                        </button>
+                        <div id="panel">
+                            <h2>
+                                <strong>KEEP CALM 😎
+                                    <br> AND
+                                    <br> LEGGO🤟</strong>
+                            </h2>
+                        </div>
+                        <div class="container p-2 d-flex flex-row d-flex justify-content-start">
+                            <button class="h1 py-3 px-4 btn btn-info mx-1 btn-lg" disabled="true" for="time" id="timeDisplay">0</button>
+                            <input class="form-control h1 text-right w-50 text-font-md userInput font-26">
+                            <button class="form-control sysText h1 btn-light mx-1 pl-0 text-font-md font-26" disabled="true">
+                                <span class="text-success" id="currentWord"></span>
+                                <span id="otherWords"></span>
+                            </button>
+                            <button class="btn btn-light h1 text-info" disabled="true">WPM: 23</button>
+                        </div>
+                        <button onclick="clearValues()" class="form-control w-auto" id="new" type="button">Play Again</button>
+                    </div>
+                    <button onclick="goBack()" class="btn btn-lg btn-info ml-2 d-flex justify-content-start"> Back </button>
+                </div>
+            </div>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+        <script src="js/text.js"></script>
+        <script src="js/karuru.js"></script>
+    </div>
+</body>
+
+</html>
