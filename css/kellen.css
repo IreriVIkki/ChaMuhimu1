@@ -1,9 +1,13 @@
-.kids {
-    background-color: whitesmoke;
-    background-image: url('../assets/watoto2.jpeg');
+body {
+    /* background-color: whitesmoke; */
+    background-image: url('../img/watoto2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
+}
+
+.xxx {
+    opacity: 0.9;
 }
 
 h1,

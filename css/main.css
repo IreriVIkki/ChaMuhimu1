@@ -10,6 +10,9 @@ body {
     display: none;
 }
 
+.disable {
+    pointer-events:none;
+}
 .chaMuhimuImg {
     position: absolute;
     top: 65%;

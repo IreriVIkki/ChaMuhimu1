@@ -1,4 +1,4 @@
-var originalSysText = "Is allowance instantly strangers applauded discourse so. Separate entrance welcomed sensible laughing why one moderate shy. We seeing piqued garden he. As in merry at forth least ye stood. And cold sons yet with. Delivered middleton therefore me at. Attachment companions man way excellence how her pianoforte."
+var originalSysText = "Cha Muhimu meaning... This is perhaps the most popular phrase on social media currently. It loosely translates to “life is the only thing that matters”. It is used when a person is unable to achieve their targets or dreams and needs to take some comfort.An example in as statements Cha Muhimu ni uhai, hata kama ulikuwa wa Croatia ama uko pekee yako hii Julai--Bora Uhai "
 
 function initialText(text) {
     $('#currentWord').text((text.split(' '))[0] + ' ');
@@ -20,13 +20,13 @@ function checkAccuracy(userInput, sysCompare){
 }
 
 function playAgain(){
+    location.reload()
     initialText(originalSysText)
     $('#results').text('0');
     $('#timeDisplay').text('60');
     $('.userInput').text('');
     $('.wpm').text('00');
-    // }, 500);
-
+    $('.userInput').removeClass('disable');
 }
 
 function wordFinished(userInput, sysText, originalSysText) {
@@ -96,7 +96,7 @@ window.onload = function () {
 
     $('.userInput').on('focus', function () {
         // if ($('.userInput').val() != '') {
-            var time = 60;
+            var time = 10;
                 display = document.querySelector('#timeDisplay');
             startTimer(time, display);
         // }
@@ -105,7 +105,7 @@ window.onload = function () {
 function showResults (){
     $('#showResults').addClass('zoomIn');
     $('#showResults').removeClass('hidden');
-    // $('.userInput').css(disable, true);
+    // $('.userInput').addClass('disable');
 }
 
 function goBack() {
